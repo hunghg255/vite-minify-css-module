@@ -1,6 +1,6 @@
 {
   "name": "vite-minify-css-module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "📦 📦 unplugin minify css module",
   "scripts": {
     "build": "tsup && npm run build:fix",
@@ -98,6 +98,7 @@
     "@nuxt/kit": "^3.8.0",
     "@nuxt/schema": "^3.8.0",
     "@rollup/pluginutils": "^5.0.5",
+    "clean-css": "^5.3.3",
     "unplugin": "^1.5.0"
   },
   "engines": {

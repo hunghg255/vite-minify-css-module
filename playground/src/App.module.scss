@@ -1,0 +1,55 @@
+.app {
+  width: 10px;
+  top: 0;
+  left: 0;
+  right: 2px;
+  bottom: 2px;
+
+  .aClass {
+    color: red;
+
+    .bClass {
+      color: blue;
+
+      .cClass {
+        color: green;
+
+        .dClass {
+          color: yellow;
+
+          .eClass {
+            color: pink;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Test
+.app1 {
+}
+
+.app {
+  background-color: red;
+
+  .aClass {
+    font-size: 10px;
+
+    .bClass {
+      font-size: 11px;
+
+      .cClass {
+        font-size: 12px;
+
+        .dClass {
+          font-size: 13px;
+
+          .eClass {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

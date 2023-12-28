@@ -34,6 +34,7 @@ export default defineConfig({
 ```typescript
 export interface PluginOptions {
   dictionary?: string;
+  clearnCSS?: OptionsOutput;
 }
 ```
 

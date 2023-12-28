@@ -38,6 +38,21 @@ export interface PluginOptions {
 }
 ```
 
+## Example
+
+```ts
+  MinifyCssModule({
+    cleanCSS: {
+      level: {
+        2: {
+          mergeSemantically: true,
+          restructureRules: true,
+        },
+      },
+    },
+  }),
+```
+
 ## How does it work?
 
 By default, when using css modules, you end up with hashes or other long class-names in your bundled css files:

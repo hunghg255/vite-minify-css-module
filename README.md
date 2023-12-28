@@ -5,6 +5,7 @@
 #### 🌈 Features
 
 - 🍰 Minify css module class name
+- 🍰 Support clean-css options
 
 ## 📦 Installation
 
@@ -20,10 +21,23 @@ npm i vite-minify-css-module@latest -D
 ```ts
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import ResizeImage from 'vite-minify-css-module/vite';
+import MinifyCssModule from 'vite-minify-css-module/vite';
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), ResizeImage()],
+  plugins: [
+    react(),
+    MinifyCssModule({
+      cleanCSS: {
+        level: {
+          2: {
+            mergeSemantically: true,
+            restructureRules: true,
+          },
+        },
+      },
+    }),
+  ],
 });
 ```
 
@@ -38,36 +52,21 @@ export interface PluginOptions {
 }
 ```
 
-## Example
-
-```ts
-  MinifyCssModule({
-    cleanCSS: {
-      level: {
-        2: {
-          mergeSemantically: true,
-          restructureRules: true,
-        },
-      },
-    },
-  }),
-```
-
 ## How does it work?
 
 By default, when using css modules, you end up with hashes or other long class-names in your bundled css files:
 
 ```css
 @keyframes _close-card_pzatx_1 {
-/_ ...css _/
+  /* CSS HERE */
 }
 
 ._card_pzatx_32 {
-/_ ...css _/
+  /* CSS HERE */
 }
 
 ._back_pzatx_49 ._content_pzatx_70 ._close_pzatx_74 {
-/_ ...css _/
+  /* CSS HERE */
 }
 ```
 
@@ -75,14 +74,14 @@ By using this module, the smalles possible classname will be used for each "id":
 
 ```css
 @keyframes a {
-/_ ...css _/
+  /* CSS HERE */
 }
 
 .v {
-/_ ...css _/
+  /* CSS HERE */
 }
 
 .c .s .w {
-/_ ...css _/
+  /* CSS HERE */
 }
 ```

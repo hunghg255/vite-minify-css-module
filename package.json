@@ -1,6 +1,6 @@
 {
   "name": "vite-minify-css-module",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "📦 📦 unplugin minify css module",
   "scripts": {
     "build": "tsup && npm run build:fix",

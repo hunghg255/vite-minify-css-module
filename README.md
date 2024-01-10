@@ -1,8 +1,21 @@
-# 📦 vite-minify-css-module
+<p align="center">
+<a href="https://www.npmjs.com/package/vite-minify-css-module" target="_blank" rel="noopener noreferrer">
+<img src="https://api.iconify.design/bi:plugin.svg?color=%23a985ff" alt="logo" width='100'/></a>
+</p>
 
-[![NPM version](https://img.shields.io/npm/v/vite-minify-css-module?color=a1b858&label=)](https://www.npmjs.com/package/vite-minify-css-module)
+<p align="center">
+  A plugin minify css module for <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">Vitejs</a>
+</p>
 
-#### 🌈 Features
+<p align="center">
+  <a href="https://www.npmjs.com/package/vite-minify-css-module" target="_blank" rel="noopener noreferrer"><img src="https://badge.fury.io/js/vite-minify-css-module.svg" alt="NPM Version" /></a>
+  <a href="https://www.npmjs.com/package/vite-minify-css-module" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/npm/dt/vite-minify-css-module.svg?logo=npm" alt="NPM Downloads" /></a>
+  <a href="https://bundlephobia.com/result?p=vite-minify-css-module" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/bundlephobia/minzip/vite-minify-css-module" alt="Minizip" /></a>
+  <a href="https://github.com/hunghg255/vite-minify-css-module/graphs/contributors" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg" alt="Contributors" /></a>
+  <a href="https://github.com/hunghg255/vite-minify-css-module/blob/main/LICENSE" target="_blank" rel="noopener noreferrer"><img src="https://badgen.net/github/license/hunghg255/vite-minify-css-module" alt="License" /></a>
+</p>
+
+## 🌈 Features
 
 - 🍰 Minify css module class name
 - 🍰 Support clean-css options
@@ -13,7 +26,7 @@
 npm i vite-minify-css-module@latest -D
 ```
 
-#### support vite and rollup.
+## support vite and rollup.
 
 <details>
 <summary>Basic</summary><br>

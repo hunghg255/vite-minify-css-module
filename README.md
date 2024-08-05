@@ -83,7 +83,7 @@ By default, when using css modules, you end up with hashes or other long class-n
 }
 ```
 
-By using this module, the smalles possible classname will be used for each "id":
+By using this module, the smallest possible classname will be used for each "id":
 
 ```css
 @keyframes a {
